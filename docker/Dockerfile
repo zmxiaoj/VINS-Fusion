@@ -1,4 +1,4 @@
-FROM ros:kinetic-perception
+FROM ros:noetic-perception
 
 ENV CERES_VERSION="1.12.0"
 ENV CATKIN_WS=/root/catkin_ws
@@ -8,6 +8,7 @@ RUN   if [ "x$(nproc)" = "x1" ] ; then export USE_PROC=1 ; \
       else export USE_PROC=$(($(nproc)/2)) ; fi && \
       apt-get update && apt-get install -y \
       cmake \
+      git \
       libatlas-base-dev \
       libeigen3-dev \
       libgoogle-glog-dev \
