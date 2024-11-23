@@ -13,7 +13,7 @@ RUN   if [ "x$(nproc)" = "x1" ] ; then export USE_PROC=1 ; \
       libeigen3-dev \
       libgoogle-glog-dev \
       libsuitesparse-dev \
-      python-catkin-tools \
+      python3-catkin-tools \
       ros-${ROS_DISTRO}-cv-bridge \
       ros-${ROS_DISTRO}-image-transport \
       ros-${ROS_DISTRO}-message-filters \
